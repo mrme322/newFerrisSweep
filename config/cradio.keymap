@@ -199,22 +199,6 @@
             require-prior-idle-ms = <100>;
         };
 
-        toMouse {
-            bindings = <&to 0>;
-            key-positions = <31 12>;
-            timeout-ms = <40>;
-            slow-release;
-            require-prior-idle-ms = <100>;
-        };
-
-        tomainlayer {
-            bindings = <&tapToHoldMo 0 0>;
-            key-positions = <13 31>;
-            timeout-ms = <80>;
-            slow-release;
-            require-prior-idle-ms = <50>;
-        };
-
         appWindows {
             bindings = <&kp LC(LA(DOWN))>;
             key-positions = <10 30>;
@@ -236,22 +220,6 @@
             timeout-ms = <40>;
             slow-release;
             require-prior-idle-ms = <80>;
-        };
-
-        toFn {
-            bindings = <&mo 3>;
-            key-positions = <31 11 12 13>;
-            timeout-ms = <150>;
-            slow-release;
-            require-prior-idle-ms = <100>;
-        };
-
-        gaming {
-            bindings = <&tog 0>;
-            key-positions = <31 20 21 22 23>;
-            timeout-ms = <150>;
-            slow-release;
-            require-prior-idle-ms = <100>;
         };
     };
 
