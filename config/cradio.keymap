@@ -137,6 +137,12 @@
             timeout-ms = <40>;
             require-prior-idle-ms = <100>;
         };
+                wordDelRMac {
+            bindings = <&kp LA(BACKSPACE)>;
+            key-positions = <17 18>;
+            timeout-ms = <40>;
+            require-prior-idle-ms = <100>;
+        };
 
         delR {
             bindings = <&kp DELETE>;
@@ -145,12 +151,7 @@
             require-prior-idle-ms = <100>;
         };
 
-        wordDelRMac {
-            bindings = <&kp LA(BACKSPACE)>;
-            key-positions = <17 18>;
-            timeout-ms = <40>;
-            require-prior-idle-ms = <100>;
-        };
+
 
         delL {
             bindings = <&kp DELETE>;
