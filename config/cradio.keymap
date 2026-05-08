@@ -206,14 +206,6 @@
             require-prior-idle-ms = <100>;
         };
 
-        toRectangleSnap {
-            bindings = <&mo 11>;
-            key-positions = <31 11>;
-            timeout-ms = <150>;
-            slow-release;
-            require-prior-idle-ms = <100>;
-        };
-
         leftEnter {
             bindings = <&kp ENTER>;
             key-positions = <21 22>;
@@ -231,7 +223,7 @@
 &kp Q            &kp W            &kp E                &kp R              &kp T          &kp Y        &kp U              &kp I                &kp O            &kp P
 &hml LEFT_WIN A  &hml LEFT_ALT S  &hml LEFT_CONTROL D  &hml LEFT_SHIFT F  &hml CAPS G    &hmr CAPS H  &hmr LEFT_SHIFT J  &hmr LEFT_CONTROL K  &hmr LEFT_ALT L  &hmr LEFT_WIN SEMICOLON
 &kp Z            &kp X            &kp C                &kp V              &kp B          &kp N        &kp M              &kp COMMA            &kp DOT          &kp FSLH
-                                                       &lt 12 TAB         &LTHUMB        &lt 4 SPACE  &lt 5 ENTER
+                                                       &lt 11 TAB         &LTHUMB        &lt 4 SPACE  &lt 5 ENTER
             >;
         };
 
@@ -322,15 +314,6 @@
 &kp SEMI  &kp L    &kp K      &kp J    &kp H        &none  &none  &none  &none  &none
 &kp FSLH  &kp DOT  &kp COMMA  &kp M    &kp N        &none  &none  &none  &none  &none
                               &kp RET  &kp SPACE    &none  &none
-            >;
-        };
-
-        rectangleSnap {
-            bindings = <
-&none          &none                     &fullScreen        &none                      &none            &none  &none  &none  &none  &none
-&none          &kp LS(LG(LC(LA(LEFT))))  &kp LA(LC(ENTER))  &kp LS(LG(LC(LA(RIGHT))))  &none            &none  &none  &none  &none  &none
-&kp LA(LC(E))  &kp LA(LC(D))             &kp LA(LC(F))      &kp LA(LC(G))              &kp LA(LC(T))    &none  &none  &none  &none  &none
-                                                            &none                      &none            &none  &none
             >;
         };
 
