@@ -59,11 +59,11 @@
             hold-while-undecided;
         };
 
-        LTHUMB: LTHUMB {
+        LThumbMac: LThumbMac {
             compatible = "zmk,behavior-tap-dance";
-            label = "LTHUMB";
+            label = "LTHUMBMAC";
             #binding-cells = <0>;
-            bindings = <&tapSk_holdLayer 1 LEFT_SHIFT>, <&lt 2 LG(SPACE)>;
+            bindings = <&tapSk_holdLayer 1 LEFT_SHIFT>, <&lt 3 LG(SPACE)>;
 
             tapping-term-ms = <380>;
         };
@@ -90,7 +90,7 @@
         };
 
         toSymb {
-            bindings = <&mo 6>;
+            bindings = <&mo 7>;
             key-positions = <31 32>;
             timeout-ms = <150>;
             require-prior-idle-ms = <100>;
@@ -131,7 +131,7 @@
             require-prior-idle-ms = <40>;
         };
 
-        wordDelMac {
+        wordDelLMac {
             bindings = <&kp LA(BACKSPACE)>;
             key-positions = <12 11>;
             timeout-ms = <40>;
@@ -160,7 +160,7 @@
         };
 
         LhandOHM {
-            bindings = <&mo 8>;
+            bindings = <&mo 9>;
             key-positions = <30 12>;
             timeout-ms = <40>;
             slow-release;
@@ -168,7 +168,7 @@
         };
 
         RhandOHM {
-            bindings = <&mo 8>;
+            bindings = <&mo 9>;
             key-positions = <33 17>;
             timeout-ms = <40>;
             slow-release;
@@ -176,7 +176,7 @@
         };
 
         toAdj {
-            bindings = <&mo 7>;
+            bindings = <&mo 8>;
             key-positions = <0 4>;
             timeout-ms = <150>;
             slow-release;
@@ -184,7 +184,7 @@
         };
 
         toLeftMedia-Nav {
-            bindings = <&mo 9>;
+            bindings = <&mo 10>;
             key-positions = <31 1 2 3>;
             timeout-ms = <150>;
             slow-release;
@@ -192,7 +192,7 @@
         };
 
         rightToLeft {
-            bindings = <&sl 10>;
+            bindings = <&sl 11>;
             key-positions = <12 11 13>;
             timeout-ms = <200>;
             slow-release;
@@ -223,7 +223,7 @@
 &kp Q            &kp W            &kp E                &kp R              &kp T          &kp Y        &kp U              &kp I                &kp O            &kp P
 &hml LEFT_WIN A  &hml LEFT_ALT S  &hml LEFT_CONTROL D  &hml LEFT_SHIFT F  &hml CAPS G    &hmr CAPS H  &hmr LEFT_SHIFT J  &hmr LEFT_CONTROL K  &hmr LEFT_ALT L  &hmr LEFT_WIN SEMICOLON
 &kp Z            &kp X            &kp C                &kp V              &kp B          &kp N        &kp M              &kp COMMA            &kp DOT          &kp FSLH
-                                                       &lt 11 TAB         &LTHUMB        &lt 4 SPACE  &lt 5 ENTER
+                                                       &lt 12 TAB         &LThumbMac     &lt 5 SPACE  &lt 6 ENTER
             >;
         };
 
@@ -233,6 +233,15 @@
 &kp LG(A)                 &kp LG(X)                  &kp LG(C)                 &kp LG(V)             &kp LG(E)        &none  &none  &none  &none  &none
 &kp LG(Z)                 &kp LG(LS(N5))             &kp LG(LS(LC(NUMBER_4)))  &kp LG(D)             &kp LG(Q)        &none  &none  &none  &none  &none
                                                                                &kp LG(LEFT_BRACKET)  &none            &none  &none
+            >;
+        };
+
+        mainWindows {
+            bindings = <
+&kp Q            &kp W            &kp E                &kp R              &kp T          &kp Y        &kp U              &kp I                &kp O            &kp P
+&hml LEFT_WIN A  &hml LEFT_ALT S  &hml LEFT_CONTROL D  &hml LEFT_SHIFT F  &hml CAPS G    &hmr CAPS H  &hmr LEFT_SHIFT J  &hmr LEFT_CONTROL K  &hmr LEFT_ALT L  &hmr LEFT_WIN SEMICOLON
+&kp Z            &kp X            &kp C                &kp V              &kp B          &kp N        &kp M              &kp COMMA            &kp DOT          &kp FSLH
+                                                       &lt 12 TAB         &LThumbMac     &lt 5 SPACE  &lt 6 ENTER
             >;
         };
 
