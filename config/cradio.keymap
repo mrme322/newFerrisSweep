@@ -208,7 +208,7 @@
         };
 
         tomainlayer {
-            bindings = <&tapToHoldMo 11 0>;
+            bindings = <&tapToHoldMo 0 0>;
             key-positions = <13 31>;
             timeout-ms = <80>;
             slow-release;
@@ -223,7 +223,7 @@
         };
 
         toRectangleSnap {
-            bindings = <&mo 12>;
+            bindings = <&mo 11>;
             key-positions = <31 11>;
             timeout-ms = <150>;
             slow-release;
@@ -247,49 +247,11 @@
         };
 
         gaming {
-            bindings = <&tog 14>;
+            bindings = <&tog 0>;
             key-positions = <31 20 21 22 23>;
             timeout-ms = <150>;
             slow-release;
             require-prior-idle-ms = <100>;
-        };
-    };
-
-    macros {
-        dictation: dictation {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp CAPS &kp D>,
-                <&macro_release>,
-                <&kp D &kp CAPSLOCK>;
-
-            label = "DICTATION";
-        };
-
-        siri: siri {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp CAPS &kp SPACE>,
-                <&macro_release>,
-                <&kp SPACE &kp CAPS>;
-
-            label = "SIRI";
-        };
-
-        fullScreen: fullScreen {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp CAPS &kp F>,
-                <&macro_release>,
-                <&kp F &kp CAPS>;
-
-            label = "FULLSCREEN";
         };
     };
 
@@ -301,7 +263,7 @@
 &kp Q            &kp W            &kp E                &kp R              &kp T          &kp Y        &kp U              &kp I                &kp O            &kp P
 &hml LEFT_WIN A  &hml LEFT_ALT S  &hml LEFT_CONTROL D  &hml LEFT_SHIFT F  &hml CAPS G    &hmr CAPS H  &hmr LEFT_SHIFT J  &hmr LEFT_CONTROL K  &hmr LEFT_ALT L  &hmr LEFT_WIN SEMICOLON
 &kp Z            &kp X            &kp C                &kp V              &kp B          &kp N        &kp M              &kp COMMA            &kp DOT          &kp FSLH
-                                                       &lt 13 TAB         &LTHUMB        &lt 4 SPACE  &lt 5 ENTER
+                                                       &lt 12 TAB         &LTHUMB        &lt 4 SPACE  &lt 5 ENTER
             >;
         };
 
@@ -395,15 +357,6 @@
             >;
         };
 
-        momentaryABC {
-            bindings = <
-&kp Q            &kp W            &kp E                &kp R              &kp T          &kp Y        &kp U              &kp I                &kp O            &kp P
-&hml LEFT_WIN A  &hml LEFT_ALT S  &hml LEFT_CONTROL D  &hml LEFT_SHIFT F  &hml CAPS G    &hmr CAPS H  &hmr LEFT_SHIFT J  &hmr LEFT_CONTROL K  &hmr LEFT_ALT L  &hmr LEFT_WIN SEMICOLON
-&kp Z            &kp X            &kp C                &kp V              &kp B          &kp N        &kp M              &kp COMMA            &kp DOT          &kp FSLH
-                                                       &lt 3 TAB          &LTHUMB        &lt 4 SPACE  &lt 5 ENTER
-            >;
-        };
-
         rectangleSnap {
             bindings = <
 &none          &none                     &fullScreen        &none                      &none            &none  &none  &none  &none  &none
@@ -419,24 +372,6 @@
 &kp LC(LG(LA(LS(A))))  &kp LC(LG(LA(LS(S))))  &kp LC(LG(LA(LS(D))))  &kp LC(LG(LA(LS(F))))  &kp LC(LG(LA(LS(G))))    &kp LC(LG(LA(LS(H))))  &kp LC(LG(LA(LS(J))))  &kp LC(LG(LA(LS(K))))  &kp LC(LG(LA(LS(L))))       &kp LC(LG(LA(LS(SEMICOLON))))
 &kp LC(LG(LA(LS(Z))))  &kp LC(LG(LA(LS(X))))  &kp LC(LG(LA(LS(C))))  &kp LC(LG(LA(LS(V))))  &kp LC(LG(LA(LS(B))))    &kp LC(LG(LA(LS(N))))  &kp LC(LG(LA(LS(M))))  &kp LC(COMMA)          &kp LC(LG(LA(LS(PERIOD))))  &kp LC(LG(LA(LS(SLASH))))
                                                                      &none                  &none                    &none                  &none
-            >;
-        };
-
-        Gaming {
-            bindings = <
-&kp Q  &kp W  &kp E  &kp R      &kp T        &kp Y      &kp U    &kp I      &kp O    &kp P
-&kp A  &kp S  &kp D  &kp F      &kp G        &kp H      &kp J    &kp K      &kp L    &kp SEMI
-&kp Z  &kp X  &kp C  &kp V      &kp B        &kp N      &kp M    &kp COMMA  &kp DOT  &kp FSLH
-                     &kp LCTRL  &kp LSHFT    &kp SPACE  &kp RET
-            >;
-        };
-
-        layer_15 {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans    &trans  &trans
             >;
         };
     };
