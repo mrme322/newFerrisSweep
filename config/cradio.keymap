@@ -131,7 +131,7 @@
             require-prior-idle-ms = <40>;
         };
 
-        wordDel {
+        wordDelMac {
             bindings = <&kp LA(BACKSPACE)>;
             key-positions = <12 11>;
             timeout-ms = <40>;
@@ -145,7 +145,7 @@
             require-prior-idle-ms = <100>;
         };
 
-        wordDelR {
+        wordDelRMac {
             bindings = <&kp LA(BACKSPACE)>;
             key-positions = <17 18>;
             timeout-ms = <40>;
