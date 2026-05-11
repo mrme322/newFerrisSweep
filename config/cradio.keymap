@@ -240,6 +240,14 @@
             require-prior-idle-ms = <100>;
             layers = <2>;
         };
+
+        toFn {
+            bindings = <&mo 4>;
+            key-positions = <11 12 13 31>;
+            slow-release;
+            timeout-ms = <40>;
+            require-prior-idle-ms = <100>;
+        };
     };
 
     keymap {
