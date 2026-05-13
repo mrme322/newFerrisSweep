@@ -259,7 +259,8 @@
                 <&kp LEFT_WIN>,
                 <&macro_tap>,
                 <&kp TAB>,
-                <&macro_release>;
+                <&macro_release>,
+                <&kp LEFT_WIN>;
 
             label = "NEW_MACRO";
         };
