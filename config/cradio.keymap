@@ -263,8 +263,8 @@
         macShorcuts0 {
             bindings = <
 &kp LS(LA(LC(LG(LEFT))))  &kp LG(LS(LC(LA(RIGHT))))  &kp LC(LG(LA(A)))         &kp LC(LG(LA(B)))     &kp LG(LC(D))    &none  &none  &none  &none  &none
-&kp LG(A)                 &kp LG(X)                  &kp LG(C)                 &kp LG(V)             &kp LG(E)        &none  &none  &none  &none  &none
-&kp LG(Z)                 &kp LG(LS(N5))             &kp LG(LS(LC(NUMBER_4)))  &kp LG(D)             &kp LG(Q)        &none  &none  &none  &none  &none
+&kp LC(A)       &kp LC(X)               &kp LC(C)         &kp LC(V)          &kp LG(E)        &none  &none  &none  &none  &none
+&kp LC(Z)                 &kp LG(LS(N5))             &kp LG(LS(LC(NUMBER_4)))  &kp LG(D)             &kp LG(Q)        &none  &none  &none  &none  &none
                                                                                &kp LG(LEFT_BRACKET)  &none            &none  &none
             >;
         };
