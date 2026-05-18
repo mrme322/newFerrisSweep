@@ -280,10 +280,10 @@
 
         macShorcuts0 {
             bindings = <
-&kp LG(N1)  &kp LG(N2)                &kp LG(N3)                &kp LG(N4)                 &kp LG(N5)              &none  &none  &none  &none  &none
-&kp LG(A)   &kp LG(X)                 &kp LG(C)                 &kp LG(V)                  &kp LG(LEFT_BRACKET)    &none  &none  &none  &none  &none
-&kp LG(Z)   &kp LS(LG(LC(NUMBER_4)))  &kp LG(LS(LC(LA(LEFT))))  &kp LG(LS(LA(LC(RIGHT))))  &kp LG(Q)               &none  &none  &none  &none  &none
-                                                                &none                      &none                   &none  &none
+&kp LG(N1)            &kp LG(N2)                &kp LG(N3)                &kp LG(N4)                 &kp LG(N5)              &none  &none  &none  &none  &none
+&kp LG(LS(NUMBER_1))  &kp LG(X)                 &kp LG(C)                 &kp LG(V)                  &kp LG(LEFT_BRACKET)    &none  &none  &none  &none  &none
+&kp LG(Z)             &kp LS(LG(LC(NUMBER_4)))  &kp LG(LS(LC(LA(LEFT))))  &kp LG(LS(LA(LC(RIGHT))))  &kp LG(Q)               &none  &none  &none  &none  &none
+                                                                          &none                      &none                   &none  &none
             >;
         };
 
