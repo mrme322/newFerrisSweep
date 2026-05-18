@@ -140,22 +140,6 @@
             require-prior-idle-ms = <40>;
         };
 
-        wordDelLMac {
-            bindings = <&kp LA(BACKSPACE)>;
-            key-positions = <12 11>;
-            timeout-ms = <40>;
-            require-prior-idle-ms = <100>;
-            layers = <0>;
-        };
-
-        wordDelRMac {
-            bindings = <&kp LA(BACKSPACE)>;
-            key-positions = <17 18>;
-            timeout-ms = <40>;
-            require-prior-idle-ms = <100>;
-            layers = <0>;
-        };
-
         delR {
             bindings = <&kp DELETE>;
             key-positions = <26 27>;
@@ -230,7 +214,6 @@
             key-positions = <17 18>;
             timeout-ms = <40>;
             require-prior-idle-ms = <100>;
-            layers = <2>;
         };
 
         wordDelLWin {
@@ -238,7 +221,6 @@
             key-positions = <12 11>;
             timeout-ms = <40>;
             require-prior-idle-ms = <100>;
-            layers = <2>;
         };
 
         toFn {
