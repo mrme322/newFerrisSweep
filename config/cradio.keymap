@@ -63,7 +63,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "LTHUMBMAC";
             #binding-cells = <0>;
-            bindings = <&tapSk_holdLayer 1 LEFT_SHIFT>, <&lt 0 LG(SPACE)>;
+            bindings = <&tapSk_holdLayer 1 LEFT_SHIFT>, <&lt 3 LG(SPACE)>;
 
             tapping-term-ms = <380>;
         };
@@ -82,7 +82,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "LTHUMBWIN";
             #binding-cells = <0>;
-            bindings = <&tapSk_holdLayer 0 LEFT_SHIFT>, <&lt 0 LEFT_WIN>;
+            bindings = <&tapSk_holdLayer 3 LEFT_SHIFT>, <&lt 0 LEFT_WIN>;
 
             tapping-term-ms = <380>;
         };
@@ -99,7 +99,7 @@
         };
 
         toSymb {
-            bindings = <&mo 5>;
+            bindings = <&mo 7>;
             key-positions = <31 32>;
             timeout-ms = <150>;
             require-prior-idle-ms = <100>;
@@ -140,6 +140,22 @@
             require-prior-idle-ms = <40>;
         };
 
+        wordDelLMac {
+            bindings = <&kp LA(BACKSPACE)>;
+            key-positions = <12 11>;
+            timeout-ms = <40>;
+            require-prior-idle-ms = <100>;
+            layers = <0>;
+        };
+
+        wordDelRMac {
+            bindings = <&kp LA(BACKSPACE)>;
+            key-positions = <17 18>;
+            timeout-ms = <40>;
+            require-prior-idle-ms = <100>;
+            layers = <0>;
+        };
+
         delR {
             bindings = <&kp DELETE>;
             key-positions = <26 27>;
@@ -155,7 +171,7 @@
         };
 
         LhandOHM {
-            bindings = <&mo 7>;
+            bindings = <&mo 9>;
             key-positions = <30 12>;
             timeout-ms = <40>;
             slow-release;
@@ -163,7 +179,7 @@
         };
 
         RhandOHM {
-            bindings = <&mo 7>;
+            bindings = <&mo 9>;
             key-positions = <33 17>;
             timeout-ms = <40>;
             slow-release;
@@ -171,7 +187,7 @@
         };
 
         toAdj {
-            bindings = <&mo 6>;
+            bindings = <&mo 8>;
             key-positions = <0 4>;
             timeout-ms = <150>;
             slow-release;
@@ -179,7 +195,7 @@
         };
 
         toLeftMedia-Nav {
-            bindings = <&mo 8>;
+            bindings = <&mo 10>;
             key-positions = <31 1 2 3>;
             timeout-ms = <150>;
             slow-release;
@@ -187,7 +203,7 @@
         };
 
         rightToLeft {
-            bindings = <&sl 9>;
+            bindings = <&sl 11>;
             key-positions = <12 11 13>;
             timeout-ms = <200>;
             slow-release;
@@ -214,6 +230,7 @@
             key-positions = <17 18>;
             timeout-ms = <40>;
             require-prior-idle-ms = <100>;
+            layers = <2>;
         };
 
         wordDelLWin {
@@ -221,10 +238,11 @@
             key-positions = <12 11>;
             timeout-ms = <40>;
             require-prior-idle-ms = <100>;
+            layers = <2>;
         };
 
         toFn {
-            bindings = <&mo 2>;
+            bindings = <&mo 4>;
             key-positions = <11 12 13 31>;
             slow-release;
             timeout-ms = <40>;
@@ -256,16 +274,34 @@
 &kp Q            &kp W            &kp E                &kp R              &kp T          &kp Y        &kp U              &kp I                &kp O            &kp P
 &hml LEFT_WIN A  &hml LEFT_ALT S  &hml LEFT_CONTROL D  &hml LEFT_SHIFT F  &hml CAPS G    &hmr CAPS H  &hmr LEFT_SHIFT J  &hmr LEFT_CONTROL K  &hmr LEFT_ALT L  &hmr LEFT_WIN SEMICOLON
 &kp Z            &kp X            &kp C                &kp V              &kp B          &kp N        &kp M              &kp COMMA            &kp DOT          &kp FSLH
-                                                       &lt 10 TAB         &LThumbMac     &lt 3 SPACE  &lt 4 ENTER
+                                                       &lt 12 TAB         &LThumbMac     &lt 5 SPACE  &lt 6 ENTER
             >;
         };
 
         macShorcuts0 {
             bindings = <
-&kp LS(LA(LC(LG(LEFT))))  &kp LG(LS(LC(LA(RIGHT))))  &kp LC(LG(LA(A)))         &kp LC(LG(LA(B)))  &kp LG(LC(D))           &none  &none  &none  &none  &none
-&kp LC(A)                 &kp LC(X)                  &kp LC(C)                 &kp LC(V)          &kp LG(LEFT_BRACKET)    &none  &none  &none  &none  &none
-&kp LC(Z)                 &none                      &kp LG(LS(LC(NUMBER_4)))  &kp LG(D)          &kp LG(Q)               &none  &none  &none  &none  &none
-                                                                               &none              &none                   &none  &none
+&kp LS(LA(LC(LG(LEFT))))  &kp LG(LS(LC(LA(RIGHT))))  &kp LC(LG(LA(A)))         &kp LC(LG(LA(B)))     &kp LG(LC(D))    &none  &none  &none  &none  &none
+&kp LG(A)                 &kp LG(X)                  &kp LG(C)                 &kp LG(V)             &kp LG(E)        &none  &none  &none  &none  &none
+&kp LG(Z)                 &kp LG(LS(N5))             &kp LG(LS(LC(NUMBER_4)))  &kp LG(D)             &kp LG(Q)        &none  &none  &none  &none  &none
+                                                                               &kp LG(LEFT_BRACKET)  &none            &none  &none
+            >;
+        };
+
+        mainWindows {
+            bindings = <
+&kp Q            &kp W            &kp E                &kp R              &kp T          &kp Y        &kp U              &kp I                &kp O            &kp P
+&hml LEFT_WIN A  &hml LEFT_ALT S  &hml LEFT_CONTROL D  &hml LEFT_SHIFT F  &hml CAPS G    &hmr CAPS H  &hmr LEFT_SHIFT J  &hmr LEFT_CONTROL K  &hmr LEFT_ALT L  &hmr LEFT_WIN SEMICOLON
+&kp Z            &kp X            &kp C                &kp V              &kp B          &kp N        &kp M              &kp COMMA            &kp DOT          &kp FSLH
+                                                       &lt 12 TAB         &LThumbWin     &lt 5 SPACE  &lt 6 ENTER
+            >;
+        };
+
+        customWinSc {
+            bindings = <
+&kp LG(LC(F4))  &windowsMissionControl  &kp LC(LG(LEFT))  &kp LC(LG(RIGHT))  &kp LG(LC(D))    &none  &none  &none  &none  &none
+&kp LC(A)       &kp LC(X)               &kp LC(C)         &kp LC(V)          &kp LG(E)        &none  &none  &none  &none  &none
+&kp LC(Z)       &kp C_AC_HOME           &kp LG(LS(S))     &kp LG(D)          &kp LA(F4)       &none  &none  &none  &none  &none
+                                                          &none              &none            &none  &none
             >;
         };
 
@@ -309,7 +345,7 @@
             bindings = <
 &none  &none  &none  &none       &none          &bt BT_SEL 0    &bt BT_SEL 1   &bt BT_SEL 2          &bt BT_SEL 3  &bt BT_SEL 4
 &none  &none  &none  &none       &none          &studio_unlock  &kp C_BRI_INC  &kp C_BRIGHTNESS_DEC  &none         &bt BT_CLR
-&none  &none  &none  &none       &none          &none           &none          &none                 &none         &out OUT_TOG
+&none  &none  &none  &none       &none          &none           &to 0          &to 2                 &none         &out OUT_TOG
                      &sys_reset  &bootloader    &bootloader     &sys_reset
             >;
         };
