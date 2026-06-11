@@ -403,9 +403,9 @@
 
         super+KP {
             bindings = <
-&kp LC(LG(LA(LS(Q))))  &kp LC(LG(LA(LS(W))))  &kp LC(LG(LA(LS(E))))  &kp LC(LG(LA(LS(R))))  &kp LC(LG(LA(LS(T))))    &kp LC(LG(LA(LS(Y))))  &kp LC(LG(LA(LS(U))))  &kp LC(LG(LA(LS(I))))  &kp LC(LG(LA(LS(O))))       &kp LC(LG(LA(LS(P))))
-&kp LC(LG(LA(LS(A))))  &kp LC(LG(LA(LS(S))))  &kp LC(LG(LA(LS(D))))  &kp LC(LG(LA(LS(F))))  &kp LC(LG(LA(LS(G))))    &kp LC(LG(LA(LS(H))))  &kp LC(LG(LA(LS(J))))  &kp LC(LG(LA(LS(K))))  &kp LC(LG(LA(LS(L))))       &kp LC(LG(LA(LS(SEMICOLON))))
-&kp LC(LG(LA(LS(Z))))  &kp LC(LG(LA(LS(X))))  &kp LC(LG(LA(LS(C))))  &kp LC(LG(LA(LS(V))))  &kp LC(LG(LA(LS(B))))    &kp LC(LG(LA(LS(N))))  &kp LC(LG(LA(LS(M))))  &kp LC(COMMA)          &kp LC(LG(LA(LS(PERIOD))))  &kp LC(LG(LA(LS(SLASH))))
+&kp LC((LA(LS(Q)))  &kp LC((LA(LS(W)))  &kp LC((LA(LS(E)))  &kp LC((LA(LS(R)))  &kp LC((LA(LS(T)))    &kp LC((LA(LS(Y)))  &kp LC((LA(LS(U)))  &kp LC((LA(LS(I)))  &kp LC((LA(LS(O)))       &kp LC((LA(LS(P)))
+&kp LC((LA(LS(A)))  &kp LC((LA(LS(S)))  &kp LC((LA(LS(D)))  &kp LC((LA(LS(F)))  &kp LC((LA(LS(G)))    &kp LC((LA(LS(H)))  &kp LC((LA(LS(J)))  &kp LC((LA(LS(K)))  &kp LC((LA(LS(L)))       &kp LC((LA(LS(SEICOLON))))
+&kp LC((LA(LS(Z)))  &kp LC((LA(LS(X)))  &kp LC((LA(LS(C)))  &kp LC((LA(LS(V)))  &kp LC((LA(LS(B)))    &kp LC((LA(LS(N)))  &kp LC((LA(LS(M)))  &kp LC(COMMA)          &kp LC((LA(LS(PEIOD))))  &kp LC((LA(LS(SLSH))))
                                                                      &none                  &none                    &none                  &none
             >;
         };
